@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!--dubbo的应用服务名称-->
+    <dubbo:application name="web-admin"/>
+    <!--    配置中心注册-->
+    <dubbo:registry address="zookeeper://自己的服务ip地址:2181"/>
+    <!--    dubbo注解扫描 哪里用到了dubbo的注解，就要扫描哪些包-->
+    <dubbo:annotation package="com.jiao.controller,com.jiao.config"/>
+    <!--    启动时不检查，不在乎服务端或者消费端谁先上线 设置超时时间-->
+    <dubbo:consumer check="false" timeout="600000"/>
+</beans>
