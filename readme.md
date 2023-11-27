@@ -2,11 +2,11 @@
 配置好自己的ip在相关配置文件中，例如zookeeper、redis服务
 使用的不是tomcat服务器，使用的是jetty。在maven菜单的service或者web中，使用`Plugins`中的jetty:run进行启动。
 有三个service服务端、两个web消费端。需要分别进行启动。
-![img.png](img.png)
 
-![img](https://dl4.weshineapp.com/gif/20170323/ebfd26a8ee776d5564c61798ac9bdb87.gif?f=micro_5a2m5Lmg)
+<div align=center><img src="img.png"/></div>
 
 # 项目总结:🕊️🕊️🕊️
+<div align=center><img src="https://dl4.weshineapp.com/gif/20170323/ebfd26a8ee776d5564c61798ac9bdb87.gif?f=micro_5a2m5Lmg"></div>
 
 <h3 style="color:orange">技术不是很熟练，还需练习思考</h3>
 
